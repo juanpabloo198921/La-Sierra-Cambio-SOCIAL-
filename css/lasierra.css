@@ -1,0 +1,15 @@
+.container .texto {
+	border: 1px solid #399FEC;
+	font-family: arial;
+	margin-right:0 0 20px 0;
+}
+
+.col-md-5{
+	padding-left: 10px;
+}
+
+
+header {
+	background-color: #C8CCCF;
+  
+}
