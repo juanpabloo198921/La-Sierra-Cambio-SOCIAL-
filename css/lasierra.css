@@ -8,8 +8,7 @@ header {
 
 
 .row .col-md-4{
-	padding-left: 8rem;
-
+	padding-left: 7rem;
 }
 
 .container  {
@@ -36,6 +35,10 @@ header {
 	width: 60%;
 }
 
+.col-md-12{
+	font-family: arial;
+	font-size: 120%;
+}
 
 
 
