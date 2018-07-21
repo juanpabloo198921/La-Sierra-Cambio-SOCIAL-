@@ -1,15 +1,41 @@
-.container .texto {
-	border: 1px solid #399FEC;
-	font-family: arial;
-	margin-right:0 0 20px 0;
+.center{
+	padding-left: 20px;
 }
-
-.col-md-5{
-	padding-left: 10px;
-}
-
 
 header {
-	background-color: #C8CCCF;
-  
+	background-color: #C8CCCF;  
 }
+
+
+.row .col-md-4{
+	padding-left: 8rem;
+
+}
+
+.container  {
+	font-family: arial;
+	padding-top: 15px;	
+}
+
+.row .col-md-12{
+	font-family: arial;
+	font-size: 120%;
+	padding-left: 120px;	
+}
+
+.borde{
+	margin: auto;
+	width: 75%;
+	background-color: #F8F9F9;
+	border:#CACFD2  1px solid;
+}
+
+.row .col-md-2{
+	padding-left: 13rem;
+	height: 60%;
+	width: 60%;
+}
+
+
+
+
