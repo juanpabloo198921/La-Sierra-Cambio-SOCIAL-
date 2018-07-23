@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Amigos Peludos</title>
+     <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <header>
+            <h1>Registro</h1>
+            <button>Turismo</button>
+        </header>
+        <section>
+            <form action="post">
+                
+                <div>
+                    <label for="nombre">Nombre Completo</label>
+                    <input type="text" name="nombre" placeholder="Pepito Perez" required>
+                </div>
+                <div>
+                    <label for="fecha_nacimiento">Fecha De Nacimiento</label>
+                    <input type="date" name="fecha_nacimiento" required>
+                </div>
+                <div>
+                    <label for="correo">Correo Electrónico</label>
+                    <input type="email" name="correo" placeholder="alguien@ejemplo.com" required>
+                </div>
+                <div>
+                    <label for="telefono">Telefono</label>
+                    <input type="text" name="telefono" placeholder = "5557776" required>
+                </div>
+                <div>
+                    <label>Seleccione su género:</label>
+                    <div>
+                        <input type="radio" name="genero" value="Masculino">
+                        <label for="masculino">Masculino</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="genero" value="Femenino">
+                        <label for="femenino">Femenino</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="genero" value="Otro">
+                        <label for="otro">Otro</label>
+                    </div>
+                </div>
+                <div>
+                    <!--selecciona un departamento-->
+                    <label>Departamento</label>
+                    <select name="Departamento">
+                        <option value="seleccion-d">Selecciona un Departamento</option>
+                    </select>
+                </div>
+                <div>
+                    <label>Ciudad</label>
+                    <select name="Ciudad">
+                        <option value="seleccion-c">Selecciona una Ciudad</option>
+                    </select>
+                </div>
+                <div>
+                    <label>Dirección</label>
+                    <input type="text" name="direccion" placeholder="Cra 22 #22c -22" required/>
+                </div>
+               
+              
+                <div>
+                    <label>¿Por qué quieres venir al barrio la Sierra?</label>
+                    <input type="text" name="pregunta1" required/>
+                </div>
+                <div>
+                    <label>¿Has ido a algun barrio de la ciudad?</label>
+                    <div>
+                        <input type="radio" name="inlineRadioOptions3" value="Si">
+                        <label for="inlineRadio-experienciaS">Si</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="inlineRadioOptions3" value="No">
+                        <label for="inlineRadio-experienciaN">No</label>
+                    </div>
+                </div>
+               
+                <div>
+                    <label>¿Cuál es tu tiempo estimado de recorrido?</label>
+                    <input type="text" name="pregunta4" required>
+                </div>
+               
+                <div>
+                    <button type="submit">Guardar</button>
+                    <button type="submit">Boton de respuestas</button>
+                </div>
+            </form>
+        </section>
+        <script src="ejemplo.js"></script>
+    </body>
+</html>
