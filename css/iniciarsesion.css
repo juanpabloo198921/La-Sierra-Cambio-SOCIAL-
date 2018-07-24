@@ -1,0 +1,11 @@
+.borde{
+	margin: auto;
+	width: 30%;
+	background-color: #E1E4E7;
+	border:#CACFD2  1px solid;
+	box-shadow:1px 1px 2px 2px black;
+} 
+
+.col-md-6{
+	padding-right: 20px;
+}

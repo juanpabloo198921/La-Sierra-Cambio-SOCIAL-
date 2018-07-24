@@ -9,3 +9,5 @@ var config = {
   firebase.initializeApp(config);
 
   const database= firebase.database();
+
+  var formulario = document.getElementByName("formularios")
