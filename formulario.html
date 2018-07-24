@@ -2,94 +2,121 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>Amigos Peludos</title>
-     <link rel="stylesheet" type="text/css" href="style.css">
+        <title>Turismo por la Sierra!</title>
+     <link rel="stylesheet" type="text/css" href="css/formulario.css">
+     <link rel="stylesheet" type="text/js" href="js/lasierra.js">
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
     </head>
     <body>
-        <header>
-            <h1>Registro</h1>
-            <button>Turismo</button>
-        </header>
-        <section>
+            <div class="container">
+          <div class="row">
+        <div class="col-md-4 offset-md-4">
+
+            <header><h1>Registro</h1></header>
+
+            </div>
+        </div>
+    </div>
+
+                   <section class="borde"><br>
+
+                 <div class="row">
+               <div class="col-md-4 offset-md-4">
+
             <form action="post">
                 
-                <div>
-                    <label for="nombre">Nombre Completo</label>
-                    <input type="text" name="nombre" placeholder="Pepito Perez" required>
-                </div>
-                <div>
-                    <label for="fecha_nacimiento">Fecha De Nacimiento</label>
-                    <input type="date" name="fecha_nacimiento" required>
-                </div>
-                <div>
-                    <label for="correo">Correo Electrónico</label>
+                <div class="row">
+                    <div class="col-md-7">
+
+                        <label for="nombre">Nombre Completo</label><br>
+                        <input type="text" name="nombre" placeholder="Pepito Perez" required>
+
+                    </div>
+
+                     <div class="col-md-5">
+                        <div>
+                        <label for="fecha_nacimiento">Fecha De Nacimiento</label><br>
+                        <input type="date" name="fecha_nacimiento" required>
+                        </div>
+                    </div>
+
+               </div>
+                
+                
+                <div class="row">
+                    <div class="col-md-7">
+
+                    <label for="correo">Correo Electrónico</label><br>
                     <input type="email" name="correo" placeholder="alguien@ejemplo.com" required>
                 </div>
-                <div>
-                    <label for="telefono">Telefono</label>
-                    <input type="text" name="telefono" placeholder = "5557776" required>
+
+                    <div class="col-md-5">
+                        <label for="telefono">Telefono</label><br>
+                        <input type="text" name="telefono" placeholder = "5557776" required>
+                    </div>
                 </div>
-                <div>
+
+                    <div class="row">
+                        <div class="col-md-7">
+
                     <label>Seleccione su género:</label>
                     <div>
                         <input type="radio" name="genero" value="Masculino">
                         <label for="masculino">Masculino</label>
-                    </div>
-                    <div>
+
                         <input type="radio" name="genero" value="Femenino">
                         <label for="femenino">Femenino</label>
-                    </div>
-                    <div>
+                    
                         <input type="radio" name="genero" value="Otro">
                         <label for="otro">Otro</label>
-                    </div>
+                  </div>
                 </div>
-                <div>
-                    <!--selecciona un departamento-->
-                    <label>Departamento</label>
-                    <select name="Departamento">
-                        <option value="seleccion-d">Selecciona un Departamento</option>
-                    </select>
-                </div>
-                <div>
-                    <label>Ciudad</label>
-                    <select name="Ciudad">
-                        <option value="seleccion-c">Selecciona una Ciudad</option>
-                    </select>
-                </div>
-                <div>
-                    <label>Dirección</label>
+              
+
+                
+                <div class="col-md-5">
+                    <label>Dirección</label><br>
                     <input type="text" name="direccion" placeholder="Cra 22 #22c -22" required/>
                 </div>
-               
+               </div>
               
-                <div>
-                    <label>¿Por qué quieres venir al barrio la Sierra?</label>
+                <div class="row">
+                    <div class="col-md-7">
+                    <label>¿Por qué quieres venir al barrio la Sierra?</label><br>
                     <input type="text" name="pregunta1" required/>
                 </div>
-                <div>
+                
+                <div class="col-md-5">
                     <label>¿Has ido a algun barrio de la ciudad?</label>
                     <div>
                         <input type="radio" name="inlineRadioOptions3" value="Si">
                         <label for="inlineRadio-experienciaS">Si</label>
-                    </div>
-                    <div>
+                   
                         <input type="radio" name="inlineRadioOptions3" value="No">
                         <label for="inlineRadio-experienciaN">No</label>
-                    </div>
+                 </div>
                 </div>
+               </div> 
                
                 <div>
-                    <label>¿Cuál es tu tiempo estimado de recorrido?</label>
-                    <input type="text" name="pregunta4" required>
-                </div>
-               
-                <div>
-                    <button type="submit">Guardar</button>
-                    <button type="submit">Boton de respuestas</button>
+                    <button type="submit">Enviar</button>
+                    
                 </div>
             </form>
+
+        </div>
+    </div>
+
         </section>
-        <script src="ejemplo.js"></script>
+
+
+
+
+     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
+
+<script src="https://www.gstatic.com/firebasejs/5.3.0/firebase.js"></script>
+
     </body>
 </html>
