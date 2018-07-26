@@ -15,3 +15,7 @@ header{
 	color:red;
 	padding-left: 20px;
 }
+
+.row .col-md-6{
+	padding-left: 410px;
+}

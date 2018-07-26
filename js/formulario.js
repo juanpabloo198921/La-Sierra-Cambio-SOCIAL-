@@ -10,4 +10,3 @@ var config = {
 
   const database= firebase.database();
 
-  var formulario = document.getElementByName("formularios")

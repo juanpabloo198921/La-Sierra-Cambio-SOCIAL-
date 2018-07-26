@@ -15,6 +15,7 @@ header {
 	padding-left: 7rem;
  }
 
+
 .container  {
 	font-family: arial;
 	padding-top: 15px;	
@@ -23,7 +24,7 @@ header {
 .row .col-md-12{
 	font-family: arial;
 	font-size: 120%;
-	padding-left: 120px;
+	padding-left: 70px;
 	color:black;	
 }
 

@@ -11,9 +11,14 @@ header{
 }
 
 .row .col-md-4 {
-	padding-left: 300px;
+	padding-left: 132px;
 }
 
 .row .col-md-8{
-	padding-left: 132px;
+	padding-left: 292px;
+}
+
+.row .col-md-2{
+
+	padding-left: 430px;
 }
