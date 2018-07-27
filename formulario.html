@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <title>Turismo por la Sierra!</title>
     <link rel="stylesheet" type="text/css" href="css/formulario.css">
-    <link rel="stylesheet" type="text/css" href="js/autenticacion.js">
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
 </head>
@@ -21,65 +20,38 @@
 
 <section class="borde"><br>
 
-   <div class="row">
-     <div class="col-md-4 offset-md-4">
+ <div class="row">
+   <div class="col-md-4 offset-md-4">
 
-        <form action="Registro">
+    <form action="#" class="registro">
+        <div class="registro">
 
-            <div class="row">
-                <div class="col-md-7">
+            <label for="nombre">Nombre Completo</label><br>
+            <input type="text" name="nombre" placeholder="Pepito Perez" required>
 
-                    <label for="nombre">Nombre Completo</label><br>
-                    <input type="text" name="nombre" placeholder="Pepito Perez" required>
+            <label for="fecha_nacimiento">Fecha De Nacimiento</label><br>
+            <input type="date" name="fecha_nacimiento" required>
 
-                </div>
+            <label for="correo">Correo Electrónico</label><br>
+            <input type="email" name="email" placeholder="alguien@ejemplo.com" class="email">
 
-                <div class="col-md-5">
-                    <div>
-                        <label for="fecha_nacimiento">Fecha De Nacimiento</label><br>
-                        <input type="date" name="fecha_nacimiento" required>
-                    </div>
-                </div>
-
-            </div>
+            <label for="telefono">Telefono</label><br>
+            <input type="text" name="telefono" placeholder = "5557776" required>
 
 
-            <div class="row">
-                <div class="col-md-7">
+            <label for="contraseña">Contraseña</label><br>
+            <input type="password" name="password" class="password">       
 
-                    <label for="correo">Correo Electrónico</label><br>
-                    <input type="email" name="correo" placeholder="alguien@ejemplo.com" required>
-                </div>
-
-                <div class="col-md-5">
-                    <label for="telefono">Telefono</label><br>
-                    <input type="text" name="telefono" placeholder = "5557776" required>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-md-7">
-
-                   <label for="contraseña">Contraseña</label><br>
-                   <input type="password" name="correo" placeholder="" required>       
-
-               </div>
+            <button type="submit">Enviar</button>
 
 
-               
-               <div class="col-md-5">
-                 <a href="#" target="_self"> <input type="button" name="boton" value="Enviar" /> </a> 
+        </div>
+    </form>
 
-             </div>
-         </div> 
-     </form>
-
- </div>
+</div>
 </div>
 
 </section>
-
-
 
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
