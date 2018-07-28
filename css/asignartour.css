@@ -1,5 +1,6 @@
 header{
-	background-color:#589DF5;
+	background-color:#9146F1;
+	color: #FFF;
 }
 
 .borde{
@@ -10,20 +11,11 @@ header{
 	box-shadow:1px 1px 2px 2px black ;
 }
 
-.row .col-md-4 {
-	padding-left: 132px;
-}
-
-.col-md-4{
-
+.col-md-11{
+	color:#56A4F2  ;
 	padding-left: 20px;
 }
 
-.row .col-md-8{
-	padding-left: 292px;
-}
-
-.row .col-md-2{
-
-	padding-left: 430px;
+.row .col-md-6{
+	padding-left: 410px;
 }

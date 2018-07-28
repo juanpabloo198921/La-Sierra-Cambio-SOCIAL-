@@ -1,17 +1,4 @@
-var config = {
-    apiKey: "AIzaSyAw3THBR3n9vPzYhEH0vODRVlYFwe8UUfE",
-    authDomain: "la-sierra-cambio-social.firebaseapp.com",
-    databaseURL: "https://la-sierra-cambio-social.firebaseio.com",
-    projectId: "la-sierra-cambio-social",
-    storageBucket: "la-sierra-cambio-social.appspot.com",
-    messagingSenderId: "129241450571"
-  };
-  firebase.initializeApp(config);
-
-  const database = firebase.database();
-
-
-(document).ready(function($) {
+$(document).ready(function($) {
     $('.login').on(
         'submit',
         function(e){
@@ -19,6 +6,7 @@ var config = {
             var email = $('.login .email').val();
 
             var password = $('.login .password').val();
+            console.log(password, email);
             if(!email) {
                 alert('Debe ingresar un correo');
             }
@@ -26,11 +14,11 @@ var config = {
                 alert('Debe ingresar una contrasena');
             }
             else {
-                database
+                firebase
                 .auth()
                 .signInWithEmailAndPassword(email, password)
                 .then(function(){
-                    alert('Bienvenido');
+                    location.href='asignartour.html';
                 })
                 .catch(function(error) {
                     alert('No eres bienvenido');
@@ -38,9 +26,10 @@ var config = {
             }
         }
         );
-    $('.registro').on(
+})
+    $('#enviar').click(
         'submit',
-        function(e){
+        function autenticacion(e){
             e.preventDefault();
             var email = $('.registro .email').val();
             var password = $('.registro .password').val();
@@ -52,11 +41,11 @@ var config = {
             }
             else {
 
-                database
+                firebase
                 .auth()
                 .createUserWithEmailAndPassword(email, password)
                 .then(function(){
-                    alert('Creaste un nuevo usuario');
+                     location.href='file:///C:/Users/coderise/Desktop/La-Sierra-Cambio-SOCIAL-/asignartour.html';
                     console.log(email);
                 })
                 .catch(function(error) {
@@ -66,5 +55,4 @@ var config = {
             };
         }
         );
-});
 

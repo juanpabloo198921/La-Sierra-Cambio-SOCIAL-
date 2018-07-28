@@ -2,53 +2,61 @@
 <html>
 <head>
 	<title>Turismo Por La Sierra!</title>
-	<link rel="stylesheet" type="text/css" href="css/iniciarsesion.css">
-     <link rel="stylesheet" type="text/js" href="js/formulario.js">
-     <link rel="stylesheet" type="text/css" href="js.autenticacion.js">
-     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/iniciarsesion.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
 </head>
 <body>
 
-<section class>
-  
-<div class="container">
+        <div class="container">
           <div class="row">
-        <div class="col-md-4 offset-md-4">
+            <div class="col-md-4 offset-md-4">
 
-            <header class="text-center"><h1>Iniciar Sesion</h1></header>
+                <header class="text-center"><h1>Iniciar Sesion</h1></header>
 
             </div>
         </div>
     </div>
 
- <section class="borde"><br>
+    <section class="borde"><br>
 
-                 <div class="row">
-               <div class="col-md-4 offset-md-4">
+     <div class="row">
+       <div class="col-md-4 offset-md-4">
 
-            <form action="post">
-                
-                <div class="row">
-                    <div class="col-md-5">
+        <form action="#" class="login">
 
-                        <label for="correo">Email </label>
-                    <input type="email" name="correo" placeholder="alguien@ejemplo.com" required>
+            <div class="row">
+                <div class="col-md-5">
 
-                   
+                    <label for="correo">Email </label>
+                    <input class="email" type="email" name="correo" placeholder="alguien@ejemplo.com" required>
+
+
                     <label for="contraseña">password</label>
-                    <input type="password" name="correo" placeholder="" required>       
-                    
-                   </div>
-                  </div> 
-                    
-                    <div class="row">
-                    <div class="col-md-6">
+                    <input class="password" type="password" name="correo" placeholder="" required>       
 
-                    <a href="turismo.html" target="_self"> <input type="button" name="boton" value="Enviar" /> </a> 
-                    
+                </div>
+            </div> 
+
+            <div class="row">
+                <div class="col-md-6">
+
+                    <input type="submit" name="boton" value="Enviar" />
+
+
                 </div> 	
-               </div> 
+            </div> 
+
+        </form>
+    </div>
+</div>
 </section>
 
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
+
+<script src="https://www.gstatic.com/firebasejs/5.3.0/firebase.js"></script>
+<script src="js/formulario.js"></script>
+<script src="js/autenticacion.js"></script>
 </body>
 </html>
