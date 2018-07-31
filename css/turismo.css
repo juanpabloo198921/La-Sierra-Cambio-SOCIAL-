@@ -1,3 +1,7 @@
+body{
+	background-image: url(http://www.solofondos.com/wp-content/uploads/2015/11/Imagen-de-fondo-html.jpg);
+}
+
 header{
 	background-color:#589DF5;
 }
@@ -5,7 +9,7 @@ header{
 .borde{
 	margin: auto;
 	width: 75%;
-	background-color: #F8F9F9;
+	background-color: #CDCECF  ;
 	border:#CACFD2  1px solid;
 	box-shadow:1px 1px 2px 2px black ;
 }

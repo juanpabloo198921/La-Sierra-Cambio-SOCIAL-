@@ -1,13 +1,27 @@
+body{
+	background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdn8qC5b1qEhL99vB0aGaBqA5TrzUKVz7jnK24qlxwBCa1F9G7);
+}
+
 .center{
 	padding-left: 20px;
 }
 
 header {
-	background-color: #C8CCCF;  
+	background-color: #A9A9A9  ;  
+}
+
+h2{
+	padding-left:70px ;
+}
+
+.texto{
+	padding-right: 50px;
+	text-align: justify;
+font-family: 'Allerta', sans-serif;
 }
 
 .container.row .col-md-6{
-	color:#FFFFFF;
+	color: black;
 	background-color: black;
 }
 
@@ -32,7 +46,7 @@ header {
 .borde{
 	margin: auto;
 	width: 75%;
-	background-color: #F8F9F9;
+	background-color: #D1D5D9;
 	border:#CACFD2  1px solid;
 	box-shadow:1px 1px 2px 2px black ;
 }

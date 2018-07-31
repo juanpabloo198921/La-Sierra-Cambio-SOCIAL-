@@ -1,12 +1,16 @@
+body{
+	background-image: url(http://wallup.net/wp-content/uploads/2016/05/25/57478-texture.jpg);
+}
+
 header{
-	background-color:#9146F1;
+	background-color:#9AABA1  ;
 	color: #FFF;
 }
 
 .borde{
 	margin: auto;
 	width: 75%;
-	background-color: #F8F9F9;
+	background-color: #C8CBCA;
 	border:#CACFD2  1px solid;
 	box-shadow:1px 1px 2px 2px black ;
 }

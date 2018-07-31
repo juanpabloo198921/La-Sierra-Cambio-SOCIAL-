@@ -1,11 +1,15 @@
+body{
+	background-image: url(https://images8.alphacoders.com/379/379448.jpg)
+}
+
 header{
-	background-color:#4DF83C;
+	background-color:#37FFBF  ;
 }
 
 .borde{
 	margin: auto;
 	width: 75%;
-	background-color: #F8F9F9;
+	background-color: #D5DBD9  ;
 	border:#CACFD2  1px solid;
 	box-shadow:1px 1px 2px 2px black ;
 }
