@@ -57,9 +57,4 @@ $(document).ready(function($) {
         );
 
 
-                $('#boton').click(function(){
-
-    $('#texto').text('agregando texto');
-
-});
-
+                
