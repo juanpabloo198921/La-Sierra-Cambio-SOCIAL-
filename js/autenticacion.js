@@ -45,7 +45,7 @@ $(document).ready(function($) {
                 .auth()
                 .createUserWithEmailAndPassword(email, password)
                 .then(function(){
-                     location.href='file:///C:/Users/coderise/Desktop/La-Sierra-Cambio-SOCIAL-/asignartour.html';
+                     location.href='asignartour.html';
                     console.log(email);
                 })
                 .catch(function(error) {
@@ -55,4 +55,11 @@ $(document).ready(function($) {
             };
         }
         );
+
+
+                $('#boton').click(function(){
+
+    $('#texto').text('agregando texto');
+
+});
 
