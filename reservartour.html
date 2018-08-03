@@ -26,8 +26,9 @@
       <div class="registro">
 
 
+
         <label for="nombre">Nombre Completo</label><br>
-        <input type="text" name="nombre" id="nombre" placeholder="Pepito Perez">
+        <input type="text" name="nombre" id="nombre" >
 
         <div class="row">
           <div class="col-md-7">
@@ -42,7 +43,7 @@
         <div class="col-md-7">
 
           <label>Correo Electrónico</label><br>
-          <input type="email" name="email" id="email" placeholder="alguien@ejemplo.com">
+          <input type="email" name="email" id="email" ">
 
         </div>
       </div>
@@ -52,7 +53,7 @@
         <div class="col-md-7">
 
           <label for="telefono">Telefono</label><br>
-          <input type="text" name="telefono" id="telefono" placeholder = "5557776">
+          <input type="text" name="telefono" id="telefono">
 
         </div>
       </div>
@@ -60,16 +61,16 @@
       <br>
 
       <div class="row">
+        <div class="col-md-8">
         <div>
 
-          <div class="col-md-12">
-            Seleccione tipo de nacionalidad
+          <div class="row">
+          <div class="col-md-4">
+            Nacionalidad
           </div>
+        </div>
 
-          <br>
-
-
-          <select class="col-md-11" class="form-control" name="nacionalidad" id="nacionalidad">
+          <select class="col-md-7" class="form-control" name="nacionalidad" id="nacionalidad">
             <optgroup label="nacionalidad">
               <option id="nacionalidad">Selecciona la nacionalidad</option>
               <option value="AF">Afganistán</option>
@@ -312,20 +313,25 @@
 
       </div>
 
+      </div>
+
       <br>
 
 
       <div class="row">
+        <div class="col-md-8">
         <div>
 
+          <div class="row">
           <div class="col-md-12">
-            Seleccione tipo de recorrido
+             tipo de recorrido
           </div>
+        </div>
 
-          <br>
+          
 
 
-          <select class="col-md-11" class="form-control" name="lugar" id="recorrido">
+          <select class="col-md-7" class="form-control" name="lugar" id="recorrido">
             <optgroup label="recorrido">
               <option id="seleccione">Selecciona el recorrido</option>
               <option id="recorrido1" value ="1">recorrido 1</option>  
@@ -337,15 +343,26 @@
         </div>
 
       </div>
+    </div>
 
 
 
 
-      <br>        
+      <br>    
 
-      <button type="button" id="tour">tour</button>
+      <div class="row">
+        <div class="col-md-5">   
+
+         <a href="" id="tour" target="_self"><input class="btn btn-info" type="button" name="boton" value="Enviar" /></a>
+                
+
+        </div>
+      </div>
 
     </div>
+
+
+
   </div>
 
 </div>

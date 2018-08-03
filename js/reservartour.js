@@ -42,9 +42,13 @@ jQuery(document).ready(function($) {
                 
                 };
                 firebase.database().ref('user_info').push(user_info);
-                alert('guardado con exito');
+                alert('tour agendado');
                 location.href="index.html"
             }
 
         });
 })
+
+
+
+

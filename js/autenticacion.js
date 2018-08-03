@@ -18,7 +18,7 @@ $(document).ready(function($) {
                 .auth()
                 .signInWithEmailAndPassword(email, password)
                 .then(function(){
-                    location.href='asignartour.html';
+                    location.href=('asignartour.html');
                 })
                 .catch(function(error) {
                     alert('No eres bienvenido');
@@ -56,5 +56,8 @@ $(document).ready(function($) {
         }
         );
 
-
                 
+   
+
+
+
