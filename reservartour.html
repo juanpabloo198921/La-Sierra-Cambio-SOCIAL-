@@ -3,76 +3,75 @@
 <head>
 	<title>Reservar Tour</title>     
 
-<link rel="stylesheet" type="text/css" href="css/reservartour.css">
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="css/reservartour.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
 
 </head>
 <body>
 
-	   <div class="row">
-        <div class="col-md-4 offset-md-4">
+  <div class="row">
+    <div class="col-md-4 offset-md-4">
 
-            <header><h1>Reservar Tour!</h1></header>
+      <header><h1>Reservar Tour!</h1></header>
 
-        </div>
     </div>
-</div>
+  </div>
 
-<section class="borde"><br>
 
- <div class="row">
-   <div class="col-md-5 offset-md-5">
+  <div class="borde"><br>
 
-    <form action="#" class="registro">
-        
+   <div class="row">
+     <div class="col-md-5 offset-md-5">
+
+      <div class="registro">
+
 
         <label for="nombre">Nombre Completo</label><br>
-        <input type="text" name="nombre" placeholder="Pepito Perez" required>
+        <input type="text" name="nombre" id="nombre" placeholder="Pepito Perez">
 
         <div class="row">
           <div class="col-md-7">
 
-         <label for="nombre">Apellidos</label><br>
-        <input type="text" name="Apellidos" placeholder="" required>
+           <label for="nombre">Apellidos</label><br>
+           <input type="text" name="Apellidos" id="apellido">
 
-      </div>
-    </div>
+         </div>
+       </div>
 
-          <div class="row">
+       <div class="row">
         <div class="col-md-7">
 
-                <label for="correo">Correo Electrónico</label><br>
-                <input type="email" name="email" placeholder="alguien@ejemplo.com" class="email">
+          <label>Correo Electrónico</label><br>
+          <input type="email" name="email" id="email" placeholder="alguien@ejemplo.com">
 
-            </div>
+        </div>
+      </div>
+
+
+      <div class="row">
+        <div class="col-md-7">
+
+          <label for="telefono">Telefono</label><br>
+          <input type="text" name="telefono" id="telefono" placeholder = "5557776">
+
+        </div>
+      </div>
+
+      <br>
+
+      <div class="row">
+        <div>
+
+          <div class="col-md-12">
+            Seleccione tipo de nacionalidad
           </div>
 
+          <br>
 
-        <div class="row">
-            <div class="col-md-7">
 
-                <label for="telefono">Telefono</label><br>
-                <input type="text" name="telefono" placeholder = "5557776" required>
-
-               </div>
-           </div>
-
-           
-
-           <div class="row">
-            <div class="col-md-7">
-
-              <div class="row">
-            <div class="col-md-7">
-              
-
-              <label>Nacionalidad</label>
-
-            </div>
-
-          </div>
-
-           <select style="width:170px"> 
+          <select class="col-md-11" class="form-control" name="nacionalidad" id="nacionalidad">
+            <optgroup label="nacionalidad">
+              <option id="nacionalidad">Selecciona la nacionalidad</option>
               <option value="AF">Afganistán</option>
               <option value="AL">Albania</option>
               <option value="DE">Alemania</option>
@@ -137,7 +136,7 @@
               <option value="AE">Emiratos Árabes Unidos</option>
               <option value="ER">Eritrea</option>
               <option value="SI">Eslovenia</option>
-              <option value="ES" selected>España</option>
+              <option value="ES">España</option>
               <option value="US">Estados Unidos</option>
               <option value="EE">Estonia</option>
               <option value="ET">Etiopía</option>
@@ -307,60 +306,58 @@
               <option value="YU">Yugoslavia</option>
               <option value="ZM">Zambia</option>
               <option value="ZW">Zimbabue</option>
-              </select>
+            </optgroup>
+          </select>
+        </div>
 
-              </div>
-           </div>
+      </div>
 
-           <br>
-
-				<div class="row">
-            <div class="col-md-7">
-              seleccione tipo de recorrido:
-            </div>
-
-            <br>
-
-              <div class="col-md-7">
-           		<input type="radio" name="recorrido" value="recorrido 1"/>recorrido 1
-            </div>
-
-              <div class="col-md-7">
-           		<input type="radio" name="recorrido" value="recorrido 2"/>recorrido 2
-            </div>
-
-              <div class="col-md-7">
-           		<input type="radio" name="recorrido" value="recorrido 3"/>recorrido 3
-            </div>
-
-            <div class="col-md-7">
-           		<input type="radio" name="recorrido" value="recorrido 4"/>recorrido 4
-            </div>
-
-           	</div>
-           
+      <br>
 
 
-           		
-                <br>        
+      <div class="row">
+        <div>
 
-                    <a href="" id="enviar" target="_self"><input class="btn btn-info" type="button" name="boton" value="Enviar" /></a>
-                
-            </div>
-        </form>
+          <div class="col-md-12">
+            Seleccione tipo de recorrido
+          </div>
+
+          <br>
+
+
+          <select class="col-md-11" class="form-control" name="lugar" id="recorrido">
+            <optgroup label="recorrido">
+              <option id="seleccione">Selecciona el recorrido</option>
+              <option id="recorrido1" value ="1">recorrido 1</option>  
+              <option id="recorrido2" value ="2">recorrido 2</option>
+              <option id="recorrido3" value ="3">recorrido 3</option> 
+              <option id="recorrido4" value ="4">recorrido 4</option> 
+            </optgroup>
+          </select>
+        </div>
+
+      </div>
+
+
+
+
+      <br>        
+
+      <button type="button" id="tour">tour</button>
 
     </div>
+  </div>
+
 </div>
 
-</section>
+
+</div>
 
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
-
 <script src="https://www.gstatic.com/firebasejs/5.3.0/firebase.js"></script>
-<script src="js/formulario.js"></script>
+<script src="js/firebase.js"></script>
 <script src="js/reservartour.js"></script>
 
 
