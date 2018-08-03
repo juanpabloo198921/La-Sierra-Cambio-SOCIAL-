@@ -57,6 +57,30 @@ $(document).ready(function($) {
         );
 
                 
+  function iterar(data){
+    for (var chiguiro in data ){
+      if(data.hasOwnProperty(chiguiro) ) {
+        var element = data[chiguiro];
+        var gato = {
+        usuario: element.usuario,
+        mensaje: element.mensaje
+
+        };
+      }
+    }
+  }
+
+  var traerMensajes = new Promise(function(res,rej){
+    var mensajes = database.ref('/chat/').once('value').then(function(snapshot){
+      return res(snapshot.val() );
+    });
+    if(!mensajes){return rej(); }
+
+  });
+
+  traerMensajes.then(function(data){
+    iterar(data);
+  });
    
 
 
